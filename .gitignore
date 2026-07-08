@@ -1,0 +1,50 @@
+# 1. Python虚拟环境（必须过滤，体积超大）
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.py[cod]
+*$py.class
+
+# 2. 向量数据库缓存（chroma向量库，本地存储嵌入数据，不要上传）
+chroma_db/
+
+# 3. 日志文件
+logs/
+*.log
+logistics_rag.log
+logistics_system.log
+
+# 4. 环境配置隐私文件（防止密钥泄露）
+.env
+*.env
+secret.yaml
+
+# 5. IDE、编辑器缓存
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+.DS_Store
+Thumbs.db
+
+# 6. Python打包、缓存
+*.egg-info/
+dist/
+build/
+*.whl
+*.tar.gz
+
+# 7. 运行临时文件
+*.tmp
+*.temp
+test_output/
+
+# 8. Windows系统缓存
+desktop.ini
+
+# 保留项说明：
+# data/、static/、templates/、Dockerfile、docker-compose.yml、start.sh、requirements.txt、config.yaml、所有.py源码 都要保留，不要写进ignore
